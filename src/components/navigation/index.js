@@ -2,8 +2,8 @@ import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style.css';
 
-const Header = () => (
-	<header class={style.header}>
+const Navigation = () => (
+	<header className={style.header}>
 		<h1>Ureview</h1>
 		<nav>
 			<Link activeClassName={style.active} href="/">Home</Link>
@@ -12,4 +12,4 @@ const Header = () => (
 	</header>
 );
 
-export default Header;
+export default Navigation;
