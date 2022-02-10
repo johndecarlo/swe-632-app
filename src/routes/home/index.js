@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import main from '../../style'
 import style from './style.css';
 import book from '../../assets/book.png';

@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import style from './style'
 
 const Item = (props) => (
@@ -11,7 +10,6 @@ const Item = (props) => (
       </div>
     </div>
   </div>
-
 );
 
 export default Item;

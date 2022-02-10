@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import style from './style.css';
 import Item from '../../components/item'; 
 import data from '../../data/data.json';
@@ -15,19 +14,19 @@ const Category = ({ type }) => {
 				setData(data[propName]);
 			}
 		}
-	}, []);
+	}, [type]);
 
 	return(
 		<div class={style.component}>
 		<h1>{categoryTitle}</h1>
-		<div className={style.categories}>
-            <div>
-				{categoryData.map((item, i) => {
-					const title = item.title;
-					return <Item key={i} title={title} /> 
-				})}
-            </div>
-		</div>
+			<div className={style.categories}>
+				<div>
+					{categoryData.map((item, i) => {
+						const title = item.title;
+						return <Item key={i} title={title} /> 
+					})}
+				</div>
+			</div>
 	</div>
 	)
 }
