@@ -13,15 +13,12 @@ const Home = () => (
 			<Link href="/category/movies">
 				<img className={style.category} src={movies} alt="movies" type="Movies" />
 			</Link>
-
 			<Link href="/category/tv">
 				<img className={style.category} src={tv} alt="tv" type="TV Shows" />
 			</Link>
-
 			<Link href="/category/restaurants">
 				<img className={style.category} src={restaurants} alt="restaurants" type="Restaurants" />
 			</Link>
-
 			<Link href="/category/books">
 				<img className={style.category} src={book} alt="books" type="Book" />
 			</Link>
