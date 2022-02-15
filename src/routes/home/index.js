@@ -10,21 +10,27 @@ const Home = () => (
 	<div class={main.component}>
 		<h1>Categories</h1>
 		<div className={style.categories}>
-			<Link href="/category/books">
-				<img className={style.category} src={book} alt="books" type="Book" />
-			</Link>
-
 			<Link href="/category/movies">
 				<img className={style.category} src={movies} alt="movies" type="Movies" />
+			</Link>
+
+			<Link href="/category/tv">
+				<img className={style.category} src={tv} alt="tv" type="TV Shows" />
 			</Link>
 
 			<Link href="/category/restaurants">
 				<img className={style.category} src={restaurants} alt="restaurants" type="Restaurants" />
 			</Link>
 
-			<Link href="/category/tv">
-				<img className={style.category} src={tv} alt="tv" type="TV Shows" />
+			<Link href="/category/books">
+				<img className={style.category} src={book} alt="books" type="Book" />
 			</Link>
+		</div>
+		<div className={style.categories}>
+			<h1>Movies</h1>
+			<h1>TV Shows</h1>
+			<h1>Restaurants</h1>
+			<h1>Books</h1>
 		</div>
 	</div>
 );
