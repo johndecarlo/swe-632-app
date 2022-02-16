@@ -1,3 +1,31 @@
+.cardTitle {
+  display: inline;
+  padding-right:30px;
+  padding-bottom:60px;
+}
+
+.starRating {
+  display: inline;
+  padding-right:30px;
+  padding-bottom:60px;
+}
+
+.star {
+    height: 40px;
+    width: 40px;
+    display: inline;
+}
+
+.reviewText {
+  display: inline;
+  padding-right:30px;
+  padding-bottom:60px;
+}
+
 .cardContainer {
     margin-bottom: 15px !important;
+}
+
+.button {
+  padding-right:30px;
 }
