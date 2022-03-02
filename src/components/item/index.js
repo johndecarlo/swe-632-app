@@ -19,7 +19,7 @@ const Item = (props) => {
   const userReview = [
     {
       userName: "John Doe",
-      rating: 4,
+      rating: 1,
       review: "Good one..",
       likes: false,
       dislikes: false,
@@ -103,6 +103,7 @@ const Item = (props) => {
     let total = 0;
 
     userReviewData.forEach(x => {
+      console.log(x);
       total += x.rating;
     });
 
