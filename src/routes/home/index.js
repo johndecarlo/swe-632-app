@@ -55,7 +55,9 @@ const Home = () => (
 			</div>
 		</div>
 		<div className="search-container">
-			<Search className="main-search"/>
+			<div className="search-bar-container">
+				<Search className="main-search"/>
+			</div>
 			<img src={main} alt="main" className="main-image"/>
 		</div>
 	</div>

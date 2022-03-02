@@ -19,17 +19,17 @@ const Category = () => {
 	}, [type]);
 
 	return(
-		<div class="category">
-		<h1 className="category-title">{categoryTitle}</h1>
-			<div className="categories">
-				<div>
-					{categoryData.map((item, i) => {
-						const title = item.title;
-						return <Item key={i} title={title} /> 
-					})}
+		<div class="category-component">
+			<h1 className="category-title">{categoryTitle}</h1>
+				<div className="categories">
+					<div>
+						{categoryData.map((item, i) => {
+							const title = item.title;
+							return <Item key={i} title={title} /> 
+						})}
+					</div>
 				</div>
-			</div>
-	</div>
+		</div>
 	)
 }
 
