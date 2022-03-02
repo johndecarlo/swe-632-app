@@ -55,10 +55,10 @@ const Home = () => (
 			</div>
 		</div>
 		<div className="search-container">
+			<Search className="main-search"/>
 			<img src={main} alt="main" className="main-image"/>
 		</div>
 	</div>
-
 );
 
 export default Home;

@@ -35,7 +35,6 @@
 .search-container {
     margin-top: 30px;
     position: relative;
-    text-align: center;
 
     .main-image {
         object-fit: cover;
@@ -44,11 +43,17 @@
     }
 
     .form-control {
-        padding: 20px 10px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 50px;
+        position: absolute;
+        margin-top: 100px;
+        margin-right: 20px;
+        margin-left: 75px;
+        width: 75%;
+        text-align: center;
     }
 
     .search-component {
-        position: fixed;
         padding: 50px;
         text-align: center;
     }
