@@ -1,0 +1,48 @@
+//NAVIGATION
+@import '../components/navigation/styles';
+
+//HOME
+@import '../routes/home/_styles';
+
+//CATEGORY
+@import '../routes/category/_styles';
+
+//WRITEREVIEW
+@import '../routes/review/_styles';
+
+//APP
+html, body {
+    background-color: #000000 !important;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #FFFFFF;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: #fcfcfc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1050px) {
+  .main {
+    padding: 100px 250px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .main {
+    margin-top: 75px;
+  }
+
+  .category-container {
+    padding: 15px;
+    display: block !important;
+
+    .category {
+      margin-bottom: 10px;
+    }
+  }
+}

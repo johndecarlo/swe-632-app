@@ -9,9 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-modal";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
-import star_blank from "../../app/assets/star_colored.png";
-import star_fill from "../../app/assets/star_uncolored.png";
+import { useParams } from 'react-router-dom';
 
 const Item = (props) => {
   const [averageRating, setAverageRating] = useState(0);

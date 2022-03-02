@@ -14,8 +14,6 @@ const WriteReview = (props) => {
 		console.log('submitting...')
 	}
 	
-	console.log(props)
-
 	return (
 		<div className="home">
 		<form>
@@ -24,10 +22,13 @@ const WriteReview = (props) => {
 			<div className="starRating">
 				<Rating onClick={handleRating} ratingValue={rating} />
 			</div>
-			<h2 className="question">Write a summary of your experience</h2>
-			<textarea id="experience" name="experience" rows="8" cols="75" />
 			<br />
-			<button className="btn btn-primary" onClick={handleSubmit}>
+			<br />
+			<h2 className="question">Write a summary of your experience</h2>
+			<textarea className="textbox-area" name="experience" rows="8" cols="75" />
+			<br />
+			<br />
+			<button className="btn-submit-review btn btn-primary" onClick={handleSubmit}>
 				Submit review
 			</button>
 		</form>

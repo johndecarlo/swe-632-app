@@ -1,0 +1,48 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  padding: 10px;
+  background-color: #000000 !important;
+
+  .logo {
+    margin-left: 13px;
+    font-weight: 900;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    .tree-icon {
+      width: 25px;
+      margin-right: 5px;
+      margin-bottom: 6px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #379b75;
+    }
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .navigation-links {
+    display: flex;
+    padding: 0px;
+    margin-right: 5px;
+  }
+
+  .nav-link {
+    margin-left: 5px;
+    color: #379b75 !important;
+    border: 1px solid #379b75;
+    border-radius: 5px;
+  }
+}

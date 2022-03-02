@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
-import Modal from "react-modal";
-import "./Reviews.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useEffect } from 'react';
+import Modal from 'react-modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
 Modal.setAppElement("#root");
 
