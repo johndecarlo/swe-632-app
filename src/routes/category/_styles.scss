@@ -13,6 +13,12 @@
         background-color: transparent;
         border: 1px solid #474747;
     }
+
+    .card-header-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: -60px;
+    }
   }
 
   .read-review-button{

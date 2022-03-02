@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
 Modal.setAppElement("#root");
+Modal.defaultStyles()
 
 const Reviews = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -40,6 +41,7 @@ const Reviews = () => {
   }
 
   function handleLike(index) {
+    console.log(index)
     let temp = [...userReviewData];
     console.log("the data is here ", temp);
     // temp[index].likes += 1;
@@ -99,6 +101,7 @@ const Reviews = () => {
         User Review
       </button>
       <Modal
+        portalClassName="modal"
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={{
@@ -106,6 +109,7 @@ const Reviews = () => {
             background: "rgba(0, 0, 0, 0.5)",
           },
           content: {
+            border: "3px solid #474747",
             maxWidth: "70rem",
             width: "98%",
             top: "50%",
@@ -117,6 +121,7 @@ const Reviews = () => {
             padding: "20px 25px",
             maxHeight: "100vh",
             overflowY: "auto",
+            background: "rgb(0, 0, 0) !important"
           },
         }}
       >

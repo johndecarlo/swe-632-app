@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import main from '../../app/assets/main.jpg';
-import Search from '../../components/search';
 import {ReactComponent as BookIcon} from '../../app/assets/book-line.svg';
 import {ReactComponent as MovieIcon} from '../../app/assets/movie.svg';
 import {ReactComponent as RestaurantIcon} from '../../app/assets/food-restaurant.svg';
@@ -31,7 +30,6 @@ const Home = () => (
 				</div>
 			</div>
 
-
 			<div className="category">
 				<div>
 					<RestaurantIcon className="category-icon" />
@@ -48,7 +46,7 @@ const Home = () => (
 					<TVIcon className="category-icon" />
 				</div>
 				<div>
-					<NavLink to="/category/tv">
+					<NavLink to="/category/television">
 						Television
 					</NavLink>
 				</div>

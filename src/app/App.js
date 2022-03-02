@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "../routes/home";
-import Category from '../routes/category/Category';
+import Category from '../routes/category';
 import WriteReview from '../routes/review/WriteReview';
 
 const App = () => {    

@@ -3,6 +3,8 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
+    background-color: #000000;
+    border: 1px solid #474747;
   }
   
   .reviewbox-flex {
@@ -121,4 +123,18 @@
   .textbox-area {
     background-color: transparent;
     color: #fcfcfc;
+  }
+
+  .reviewbox-like.active {
+    background-color: #3967c9;
+    color: #fff;
+  }
+
+  .reviewbox-dislike.active {
+    background-color: red;
+    color: #fff;
+  }
+
+  .ReactModal__Content {
+    background-color: #000000 !important;
   }

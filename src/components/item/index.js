@@ -9,12 +9,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-modal";
 import { Link } from "react-router-dom";
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
 const Item = (props) => {
   const [averageRating, setAverageRating] = useState(0);
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [reviews, setReviews] = useState([]);
 
   const { type } = useParams();
   const userReview = [
@@ -101,6 +100,14 @@ const Item = (props) => {
 
   useEffect(() => {
     window.localStorage.setItem("reviews", JSON.stringify(userReviewData));
+    let total = 0;
+
+    userReviewData.forEach(x => {
+      total += x.rating;
+    });
+
+    setAverageRating(total/userReviewData.length)
+
   }, [userReviewData]);
 
   const userReviewCard = userReviewData.map((review, ind) => {
@@ -120,11 +127,7 @@ const Item = (props) => {
           <p className="reviewbox-comment">{review.review}</p>
         </div>
         <div className="reviewbox-likeDislike">
-          <div
-            className={
-              review.likes ? "reviewbox-like active" : "reviewbox-like"
-            }
-          >
+          <div className={review.likes ? "reviewbox-like active" : "reviewbox-like"}>
             <div className="like-count">{review.countLike}</div>
             <FontAwesomeIcon
               onClick={() => handleLike(ind)}
@@ -147,15 +150,6 @@ const Item = (props) => {
     );
   });
 
-  function printStarts(index) {
-    let temp = [...userReviewData];
-  }
-
-  function getRatingAverage() {
-    let temp = [...userReviewData];
-    return 0
-  }
-
   return (
     <div className="cardContainer">
       <div className="card">
@@ -166,9 +160,11 @@ const Item = (props) => {
                 <h3 className={style.cardTitle}>{props.title}</h3>
               </div>
               <div className="starRating" style={{'pointer-events': 'none'}} >
-                  <Rating initialValue={averageRating} readOnly={true} onClick />
+                  <Rating size={20} initialValue={averageRating} readOnly={true} onClick />
               </div>
             </div>
+            <br />
+                Average Rating: {averageRating && averageRating}
             <p className={style.reviewText}>{userReviewData.length} Reviews</p>
           </div>
           {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}

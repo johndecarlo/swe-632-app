@@ -17,8 +17,7 @@ const WriteReview = (props) => {
 	return (
 		<div className="home">
 		<form>
-			{/* <h1 class="heading">Write a Review {location.item.title}</h1> */}
-			<h2 class="question">How many stars would you like to leave?</h2>
+			<h2 className="question">How many stars would you like to leave?</h2>
 			<div className="starRating">
 				<Rating onClick={handleRating} ratingValue={rating} />
 			</div>
