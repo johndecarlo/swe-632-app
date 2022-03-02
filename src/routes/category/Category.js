@@ -8,8 +8,6 @@ const Category = () => {
 	const [categoryTitle, setTitle] = useState("");
 	const { type } = useParams();
 
-	console.log(type);
-
 	useEffect(() => {
 		setTitle(type.charAt(0).toUpperCase() + type.slice(1));
 
@@ -22,7 +20,7 @@ const Category = () => {
 
 	return(
 		<div class="category">
-		<h1>{categoryTitle}</h1>
+		<h1 className="category-title">{categoryTitle}</h1>
 			<div className="categories">
 				<div>
 					{categoryData.map((item, i) => {

@@ -5,8 +5,6 @@ import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 import Modal from 'react-modal';
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
-import star_blank from '../../app/assets/star_colored.png';
-import star_fill from '../../app/assets/star_uncolored.png';
 
 const Item = (props) => {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -104,11 +102,7 @@ const Item = (props) => {
               <h3 className={style.cardTitle}>{props.title}</h3>
             </div>
             <div className="starRating">
-              <img className="star" src={star_blank} alt="1 Star" />
-              <img className="star" src={star_blank} alt="2 Stars" />
-              <img className="star" src={star_blank} alt="3 Stars" />
-              <img className="star" src={star_blank} alt="4 Stars" />
-              <img className="star" src={star_blank} alt="5 Stars" />
+
             </div>
           </div>
           <p className={style.reviewText}>10 Reviews</p>

@@ -2,12 +2,12 @@
     display: flex !important;
     justify-content: space-between;
     text-decoration: none;
-    padding: 0px 70px;
 
     .category {
         display: flex;
         justify-content: space-between;
         font-weight: 700;
+        margin-right: 5px;
 
         &:hover {
             background-color: #379b75;
@@ -27,6 +27,7 @@
         .category-icon {
             color: #fcfcfc;
             margin-right: 15px;
+            width: 15px;
         }
     }
 }
@@ -34,6 +35,7 @@
 .search-container {
     margin-top: 30px;
     position: relative;
+    text-align: center;
 
     .main-image {
         object-fit: cover;
