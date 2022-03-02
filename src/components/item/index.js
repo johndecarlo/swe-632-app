@@ -1,5 +1,6 @@
 import style from "../item";
 import React, { useState, useEffect } from "react";
+import { Rating } from 'react-simple-star-rating';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faThumbsUp,
@@ -13,9 +14,9 @@ import star_blank from "../../app/assets/star_colored.png";
 import star_fill from "../../app/assets/star_uncolored.png";
 
 const Item = (props) => {
+  const [averageRating, setAverageRating] = useState(0);
   const [modalIsOpen, setIsOpen] = useState(false);
-
-  console.log(props.countLikes);
+  const [reviews, setReviews] = useState([]);
 
   const { type } = useParams();
   const userReview = [
@@ -148,6 +149,15 @@ const Item = (props) => {
     );
   });
 
+  function printStarts(index) {
+    let temp = [...userReviewData];
+  }
+
+  function getRatingAverage() {
+    let temp = [...userReviewData];
+    return 0
+  }
+
   return (
     <div className="cardContainer">
       <div className="card">
@@ -157,15 +167,11 @@ const Item = (props) => {
               <div>
                 <h3 className={style.cardTitle}>{props.title}</h3>
               </div>
-              <div className="starRating">
-                <img className="star" src={star_blank} alt="1 Star" />
-                <img className="star" src={star_blank} alt="2 Stars" />
-                <img className="star" src={star_blank} alt="3 Stars" />
-                <img className="star" src={star_blank} alt="4 Stars" />
-                <img className="star" src={star_blank} alt="5 Stars" />
+              <div className="starRating" style={{'pointer-events': 'none'}} >
+                  <Rating initialValue={averageRating} readOnly={true} onClick />
               </div>
             </div>
-            <p className={style.reviewText}>10 Reviews</p>
+            <p className={style.reviewText}>{userReviewData.length} Reviews</p>
           </div>
           {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
           <Link
