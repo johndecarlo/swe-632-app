@@ -1,12 +1,12 @@
 import React from 'react';
-import Navigation from "../../components/navigation/navContainer";
+import Navigation from "../components/navigation/navContainer";
 import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from "../../routes/home";
-import Category from '../../routes/category/Category';
-import WriteReview from '../../routes/review/WriteReview';
+import Home from "../routes/home";
+import Category from '../routes/category/Category';
+import WriteReview from '../routes/review/WriteReview';
 
 const App = () => {    
   return (

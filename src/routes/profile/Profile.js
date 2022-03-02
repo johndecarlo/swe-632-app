@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import style from '../profile/index.css';
 
 const Profile = ({ user }) => {
 	const [time, setTime] = useState(Date.now());
