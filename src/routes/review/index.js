@@ -3,31 +3,31 @@ import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
-Modal.setAppElement('#root');
+Modal.setAppElement("#root");
 
 const Reviews = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   const userReview = [
     {
-      userName: 'John Doe',
+      userName: "John Doe",
       rating: 4,
-      review: 'Good one..',
+      review: "Good one..",
       likes: 0,
       dislikes: 0,
     },
     {
-      userName: 'Thomas Doe',
+      userName: "Thomas Kate",
       rating: 2,
-      review: 'Average product.',
+      review: "Average product.",
       likes: 0,
       dislikes: 0,
     },
   ];
 
   const [userReviewData, setUserReviewData] = useState(
-    localStorage.getItem('reviews')
-      ? JSON.parse(localStorage.getItem('reviews'))
+    localStorage.getItem("reviews")
+      ? JSON.parse(localStorage.getItem("reviews"))
       : userReview
   );
 
@@ -41,8 +41,9 @@ const Reviews = () => {
 
   function handleLike(index) {
     let temp = [...userReviewData];
-    temp[index].likes += 1;
-    setUserReviewData(temp);
+    console.log("the data is here ", temp);
+    // temp[index].likes += 1;
+    // setUserReviewData(temp);
   }
 
   function handleDislike(index) {
@@ -52,7 +53,7 @@ const Reviews = () => {
   }
 
   useEffect(() => {
-    window.localStorage.setItem('reviews', JSON.stringify(userReviewData));
+    window.localStorage.setItem("reviews", JSON.stringify(userReviewData));
   }, [userReviewData]);
 
   const userReviewCard = userReviewData.map((review, ind) => {
@@ -60,10 +61,11 @@ const Reviews = () => {
       <div className="reviewbox" key={ind}>
         <div className="reviewbox-flex">
           <div className="reviewbox-username">
-            User Name: <span className="reviewbox-user">{review.userName}</span>
+            User Name:{" "}
+            <span className="reviewbox-user">{review.userName}</span>
           </div>
           <div className="reviewbox-rating">
-            Rating:{' '}
+            Rating:{" "}
             <span className="reviewbox-rating-star">{review.rating} Stars</span>
           </div>
         </div>
@@ -101,20 +103,20 @@ const Reviews = () => {
         onRequestClose={closeModal}
         style={{
           overlay: {
-            background: 'rgba(0, 0, 0, 0.5)',
+            background: "rgba(0, 0, 0, 0.5)",
           },
           content: {
-            maxWidth: '70rem',
-            width: '98%',
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-            padding: '20px 25px',
-            maxHeight: '100vh',
-            overflowY: 'auto',
+            maxWidth: "70rem",
+            width: "98%",
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+            padding: "20px 25px",
+            maxHeight: "100vh",
+            overflowY: "auto",
           },
         }}
       >

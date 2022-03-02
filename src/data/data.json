@@ -1,34 +1,40 @@
 {
     "books": [
-        {
-            "title": "Lord of the Flies",
-            "rating": 5
-        },
-        {
-            "title": "Lord of the Rings: Fellowship of the Ring",
-            "rating": 4
-        }
+      {
+        "title": "Lord of the Flies",
+        "countLikes": 28,
+        "countDislikes": 20
+      },
+      {
+        "title": "Lord of the Rings: Fellowship of the Ring",
+        "countLikes": 15,
+        "countDislikes": 8
+      }
     ],
     "movies": [
-        {
-            "title": "Fight Club",
-            "rating": 4
-        },
-        {
-            "title": "Donnie Darko",
-            "rating": 5
-        }
+      {
+        "title": "Fight Club",
+        "countLikes": 70,
+        "countDislikes": 24
+      },
+      {
+        "title": "Donnie Darko",
+        "countLikes": 17,
+        "countDislikes": 9
+      }
     ],
     "restaurants": [
-        {
-            "title": "Mike's American Grill",
-            "rating": 4
-        }
+      {
+        "title": "Mike's American Grill",
+        "countLikes": 27,
+        "countDislikes": 12
+      }
     ],
     "tv": [
-        {
-            "title": "Breaking Bad",
-            "rating": 5
-        }
+      {
+        "title": "Breaking Bad",
+        "countLikes": 19,
+        "countDislikes": 10
+      }
     ]
-}
+  }

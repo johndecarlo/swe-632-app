@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import Item from '../../components/item'; 
+import Item from '../../components/item';
 import data from '../../data/data.json';
 import { useParams } from 'react-router-dom';
 
 const Category = () => {
-	const [categoryData, setData] = useState([]);
-	const [categoryTitle, setTitle] = useState("");
-	const { type } = useParams();
+  const [categoryData, setData] = useState([]);
+  const [categoryTitle, setTitle] = useState('');
+  const { type } = useParams();
 
 	useEffect(() => {
 		setTitle(type.charAt(0).toUpperCase() + type.slice(1));
 
-		for (let propName in data) {
-			if(propName === type){
-				setData(data[propName]);
-			}
-		}
-	}, [type]);
+    for (let propName in data) {
+      if (propName === type) {
+        setData(data[propName]);
+      }
+    }
+  }, [type]);
 
 	return(
 		<div class="category-component">
