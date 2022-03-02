@@ -8,7 +8,7 @@ import Home from "../routes/home";
 import Category from '../routes/category';
 import WriteReview from '../routes/review/WriteReview';
 
-const App = () => {    
+const App = () => {
   return (
     <div className="app">
       <Navigation />
