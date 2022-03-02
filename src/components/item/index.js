@@ -159,7 +159,7 @@ const Item = (props) => {
               <div>
                 <h3 className={style.cardTitle}>{props.title}</h3>
               </div>
-              <div className="starRating" style={{'pointer-events': 'none'}} >
+              <div className="starRating" style={{'pointerEvents': 'none'}} >
                   <Rating size={20} initialValue={averageRating} readOnly={true} onClick />
               </div>
             </div>
