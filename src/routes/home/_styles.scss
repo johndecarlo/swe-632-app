@@ -1,4 +1,54 @@
 .category-container {
     display: flex !important;
     justify-content: space-between;
+    text-decoration: none;
+    padding: 0px 70px;
+
+    .category {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+
+        &:hover {
+            background-color: #379b75;
+            cursor: pointer;
+        }
+
+        padding: 10px 20px;
+        border: 1px solid #474747;
+        border-radius: 30px;
+        text-align: left;
+
+        a {
+            text-decoration: none;
+            color: #fcfcfc;
+        }
+
+        .category-icon {
+            color: #fcfcfc;
+            margin-right: 15px;
+        }
+    }
 }
+
+.search-container {
+    margin-top: 30px;
+    position: relative;
+
+    .main-image {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+
+    .form-control {
+        padding: 20px 10px;
+    }
+
+    .search-component {
+        position: fixed;
+        padding: 50px;
+        text-align: center;
+    }
+}
+

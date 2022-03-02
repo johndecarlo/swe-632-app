@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="app">
       <Navigation />
-      <div className="main">
+      <div className="main container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/category/:type" element={<Category />} />
