@@ -57,11 +57,11 @@ const Category = () => {
         <h1 className="category-title">{categoryTitle}</h1>
       </div>
       <div class="flex-container">
-        <div class="flex-child magenta">
+        <div class="flex-child">
           <h4>Find {categoryTitle}:</h4>
           <input placeholder=" Search" onChange={event => setQuery(event.target.value)} />
         </div>
-        <div class="flex-child green">
+        <div class="flex-child">
           <h4>Sort {categoryTitle}:</h4>
           <Select options={options} />
         </div>
