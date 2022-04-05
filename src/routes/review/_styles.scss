@@ -50,13 +50,13 @@
   
   .reviewbox-like,
   .reviewbox-dislike {
-    font-size: 2.4rem;
-    width: 4.2rem;
-    height: 4.2rem;
+    font-size: 1.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
     background-color: #fff;
     border-radius: 50%;
     border: 1px solid #ddd;
-    line-height: 4rem;
+    line-height: 2.8rem;
     text-align: center;
     cursor: pointer;
     color: #121212;
@@ -73,10 +73,10 @@
   .like-count {
     position: absolute;
     right: -0.5rem;
-    top: -0.95rem;
-    width: 2rem;
-    height: 2rem;
-    line-height: 1.8rem;
+    top: -0.65rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.3rem;
     border-radius: 50%;
     background-color: #fff;
     border: 1px solid #003cff;
@@ -88,10 +88,10 @@
   .dislike-count {
     position: absolute;
     right: -0.5rem;
-    bottom: -0.95rem;
+    bottom: -0.65rem;
     width: 2rem;
-    height: 2rem;
-    line-height: 1.8rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
     border-radius: 50%;
     background-color: #fff;
     border: 1px solid #f70909;
@@ -137,4 +137,14 @@
 
   .ReactModal__Content {
     background-color: #000000 !important;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    font-size: 1rem;
+    margin-top: 0;
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MainNav = () => {
   return (
@@ -10,6 +11,8 @@ const MainNav = () => {
           className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
         />
         )} */}
+
+        <Link className="home-link" to="/">Home</Link>
       </div>
 
 

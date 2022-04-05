@@ -21,14 +21,14 @@
     }
   }
 
-  .read-review-button{
+  .read-review-button {
     margin-left: 10px;
   }
 
   .starRating {
     display: inline;
-    padding-right:30px;
-    padding-bottom:60px;
+    padding-right: 30px;
+    padding-bottom: 60px;
   }
   
   .star {
@@ -36,3 +36,15 @@
       width: 20px;
       display: inline;
   }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+  
+  .category-header svg {
+    font-size: 2rem;
+    color: white;
+  }
+  
