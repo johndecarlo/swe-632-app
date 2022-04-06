@@ -13,11 +13,13 @@ const Category = () => {
   const [query, setQuery] = useState("");
   const { type } = useParams();
 
+  const myComponentStyle = {
+     color: 'black'
+  }
+
   const options = [
     { value: 'recent', label: 'Most Recent' },
-    { value: 'alphabet', label: 'A-Z' },
-    { value: 'ratingHigh', label: 'Highest Rating' },
-    { value: 'ratingLow', label: 'Lowest Rating' }
+    { value: 'alphabet', label: 'A-Z' }
   ]
 
   useEffect(() => {
@@ -29,24 +31,6 @@ const Category = () => {
       }
     }
   }, [type]);
-
-  categoryData.filter(post => {
-      if (query === '') {
-        return post;
-      } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
-        return post;
-      }
-    }).map((item, i) => {
-      const title = item.title;
-      return (
-        <Item
-          key={i}
-          title={title}
-          countLikes={item.countLikes}
-          countDislikes={item.countDislikes}
-        />
-      );
-    })
 
   return (
     <div className="category-component">
@@ -63,12 +47,30 @@ const Category = () => {
         </div>
         <div class="flex-child">
           <h4>Sort {categoryTitle}:</h4>
-          <Select options={options} />
+          <Select style={ myComponentStyle } options={options} />
         </div>
       </div>
       <div className="categories">
         <div>
-          {categoryData.map((item, i) => {
+        {categoryData.filter(post => {
+            if (query === '') {
+              return post;
+            } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
+              return post;
+            }
+          }).sort(function(a, b) {
+            const nameA = a.title.toUpperCase(); // ignore upper and lowercase
+            const nameB = b.title.toUpperCase(); // ignore upper and lowercase
+            if (nameA < nameB) {
+              return -1;
+            }
+            if (nameA > nameB) {
+              return 1;
+            }
+
+            // names must be equal
+            return 0;
+          }).map((item, i) => {
             const title = item.title;
             return (
               <Item
