@@ -9,6 +9,14 @@
         font-weight: 700;
         margin-right: 5px;
 
+        .category-title {
+            text-decoration: none !important;
+            color: white !important;
+            background: none;
+            border: none;
+            font-size: 25px;
+        }
+
         &:hover {
             background-color: #379b75;
             cursor: pointer;
@@ -65,4 +73,11 @@
         text-align: center;
     }
 }
+
+@media only screen and (min-width: 1050px) {
+    .main {
+        padding: 100px 150px !important;
+    }
+}
+
 
