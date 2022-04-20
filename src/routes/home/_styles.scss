@@ -3,18 +3,22 @@
     justify-content: space-between;
     text-decoration: none;
 
+
     .category {
         display: flex;
         justify-content: space-between;
         font-weight: 700;
         margin-right: 5px;
+        text-decoration: none;
+        color: #fcfcfc;
+        font-size: 20px;
 
         &:hover {
             background-color: #379b75;
             cursor: pointer;
         }
 
-        padding: 10px 20px;
+        padding: 10px 60px;
         border: 1px solid #474747;
         border-radius: 30px;
         text-align: left;

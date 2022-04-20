@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Rating } from 'react-simple-star-rating';
+import Swal from 'sweetalert2';
+import { useNavigate, useParams, Link, useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const WriteReview = props => {
   const [rating, setRating] = useState(0); // initial rating value
   const [textValue, setTextValue] = useState('');
   const [errorMessage, setErrorMessage] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { type } = useParams();
 
   const handleRating = rate => {
     setRating(rate);
@@ -23,6 +30,13 @@ const WriteReview = props => {
 
   useEffect(() => {
     if (Object.keys(errorMessage).length === 0 && isSubmit) {
+      Swal.fire({
+        title: 'Success',
+        text: 'Thanks for your review!',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2500,
+      });
     }
   }, [errorMessage, isSubmit]);
 
@@ -38,8 +52,38 @@ const WriteReview = props => {
     return error;
   };
 
+  const confirmCancel = () => {
+    Swal.fire({
+      title: 'Are your sure you want to cancel?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, cancel it!',
+      cancelButtonText: 'No, keep it',
+    }).then(result => {
+      if (result.value) {
+        navigate(-1);
+      }
+    });
+  };
+
+
   return (
     <div className="home">
+      <div className="breadcrumb">
+        <Link className="breadcrumb-link" to="/">
+          Home
+        </Link>
+        <FontAwesomeIcon icon={faAngleRight} />
+        <Link className="breadcrumb-link" to={`/category/${type}`}>
+          {type.charAt(0).toUpperCase() + type.slice(1)}
+        </Link>
+        <FontAwesomeIcon icon={faAngleRight} />
+        <span className="breadcrumb-link">
+          {location.state.writeReviewData.title}
+        </span>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <h2 className="question">How many stars would you like to leave?</h2>
@@ -62,7 +106,13 @@ const WriteReview = props => {
           <div className="error-message">{errorMessage.textValue}</div>
         </div>
 
-        <div className="form-group">
+        <div className="form-group write-review-btns">
+          <span
+            onClick={confirmCancel}
+            className="btn-submit-review btn btn-primary"
+          >
+            Cancel
+          </span>
           <button className="btn-submit-review btn btn-primary">
             Submit Review
           </button>

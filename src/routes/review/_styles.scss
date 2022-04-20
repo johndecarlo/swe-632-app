@@ -89,7 +89,7 @@
     position: absolute;
     right: -0.5rem;
     bottom: -0.65rem;
-    width: 2rem;
+    width: 1.5rem;
     height: 1.5rem;
     line-height: 1.5rem;
     border-radius: 50%;
@@ -147,4 +147,27 @@
     color: #ff0000;
     font-size: 1rem;
     margin-top: 0;
+  }
+
+  .write-review-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  
+  .breadcrumb-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #379b75;
   }
