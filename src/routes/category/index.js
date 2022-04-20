@@ -6,6 +6,11 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavLink } from 'react-router-dom';
+import { ReactComponent as BookIcon } from '../../app/assets/book-line.svg';
+import { ReactComponent as MovieIcon } from '../../app/assets/movie.svg';
+import { ReactComponent as RestaurantIcon } from '../../app/assets/food-restaurant.svg';
+import { ReactComponent as TVIcon } from '../../app/assets/screen.svg';
 
 const Category = () => {
   const [categoryData, setData] = useState([]);
@@ -34,6 +39,35 @@ const Category = () => {
 
   return (
     <div className="category-component">
+      <div className="category-container">
+        <NavLink to="/category/books" className="category">
+          <div>
+            <BookIcon className="category-icon" />
+          </div>
+          <div>Books</div>
+        </NavLink>
+
+        <NavLink to="/category/movies" className="category">
+          <div>
+            <MovieIcon className="category-icon" />
+          </div>
+          <div>Movies</div>
+        </NavLink>
+
+        <NavLink to="/category/restaurants" className="category">
+          <div>
+            <RestaurantIcon className="category-icon" />
+          </div>
+          <div>Restaurants</div>
+        </NavLink>
+        <NavLink to="/category/television" className="category">
+          <div>
+            <TVIcon className="category-icon" />
+          </div>
+          <div>Television </div>
+        </NavLink>
+      </div>
+      <br />
       <div className="category-header">
         <Link className="return-button" to="/">
           <FontAwesomeIcon icon={faArrowCircleLeft} />
