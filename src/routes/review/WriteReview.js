@@ -70,7 +70,7 @@ const WriteReview = props => {
 
 
   return (
-    <div className="home">
+    <div className="category-component">
       <div className="breadcrumb">
         <Link className="breadcrumb-link" to="/">
           Home
@@ -107,15 +107,15 @@ const WriteReview = props => {
         </div>
 
         <div className="form-group write-review-btns">
+        <button className="btn-submit-review btn btn-primary">
+            Submit Review
+          </button>
           <span
             onClick={confirmCancel}
-            className="btn-submit-review btn btn-primary"
+            className="btn-submit-review btn btn-warning"
           >
             Cancel
           </span>
-          <button className="btn-submit-review btn btn-primary">
-            Submit Review
-          </button>
         </div>
       </form>
     </div>

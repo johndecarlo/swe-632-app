@@ -35,7 +35,7 @@ const Category = () => {
   return (
     <div className="category-component">
       <div className="category-header">
-        <Link to="/">
+        <Link className="return-button" to="/">
           <FontAwesomeIcon icon={faArrowCircleLeft} />
         </Link>
         <h1 className="category-title">{categoryTitle}</h1>
