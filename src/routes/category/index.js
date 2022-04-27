@@ -83,8 +83,6 @@ const Category = () => {
           />
         </div>
         <div className="flex-child">
-          <h4>Sort {categoryTitle}:</h4>
-          <Select style={myComponentStyle} options={options} />
         </div>
       </div>
       <div className="categories">
