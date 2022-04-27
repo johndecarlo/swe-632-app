@@ -1,9 +1,9 @@
 .category-title {
-  font-weight: 600;
+  font-weight: 1000;
 }
 
 .category-component {
-  padding: 20px;
+  padding: 40px;
 }
 
 .cardContainer {
@@ -39,13 +39,13 @@
 .category-header {
   display: flex;
   align-items: center;
-  column-gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .category-header svg {
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
 }
 
@@ -109,4 +109,3 @@ input {
   justify-content: space-between;
   align-items: center;
 }
-

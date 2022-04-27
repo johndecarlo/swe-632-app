@@ -10,6 +10,7 @@ import {
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import {ReactComponent as ReviewIcon} from '../../app/assets/review.svg';
 
 const Item = props => {
   console.log(props.img);
@@ -206,6 +207,7 @@ const Item = props => {
               }}
               className="btn btn-primary"
             >
+              <ReviewIcon className="review-icon"/>
               Write a Review
             </Link>
             <button
