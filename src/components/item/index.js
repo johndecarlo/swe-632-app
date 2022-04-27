@@ -1,4 +1,3 @@
-import style from '../item';
 import React, { useState, useEffect } from 'react';
 import { Rating } from 'react-simple-star-rating';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,6 +12,7 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 const Item = props => {
+  console.log(props.img);
   const [averageRating, setAverageRating] = useState(0);
   const [modalIsOpen, setIsOpen] = useState(false);
   const writeReviewData = props;
@@ -158,46 +158,65 @@ const Item = props => {
   return (
     <div className="cardContainer">
       <div className="card">
-        <div className="card-body">
-          <div id="card-sub-body r">
-            <div className="card-header-container">
-              <div>
-                <h3 className={style.cardTitle}>{props.title}</h3>
+        <div className="card-content">
+          <div className="card-images">
+            <img src={`${props.img}`} alt="" />
+          </div>
+
+          <div className="card-body">
+            <div id="card-sub-body r" className="card-sub-body">
+              <div className="card-header-container">
+                <div>
+                  <h3 className="card-body-title">{props.title}</h3>
+                </div>
+                <div className="starRating" style={{ pointerEvents: 'none' }}>
+                  <Rating
+                    size={20}
+                    initialValue={averageRating}
+                    readOnly={true}
+                    onClick
+                  />
+                </div>
               </div>
-              <div className="starRating" style={{ pointerEvents: 'none' }}>
-                <Rating
-                  size={20}
-                  initialValue={averageRating}
-                  readOnly={true}
-                  onClick
-                />
+              <div className="card-body-description">
+                <span className="card-description-title">Description:</span>
+                <p className="card-description">{props.description}</p>
+              </div>
+              <div className="card-body-description">
+                <span className="card-description-title">Average Rating:</span>
+                <p className="card-description">
+                  {averageRating && averageRating}
+                </p>
+              </div>
+              <div className="card-body-description">
+                <span className="card-description-title">
+                  {userReviewData.length}
+                </span>
+                <p className="card-description">Reviews</p>
               </div>
             </div>
-            <br />
-            Average Rating: {averageRating && averageRating}
-            <p className={style.reviewText}>{userReviewData.length} Reviews</p>
+            {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
+            <Link
+              to={{
+                pathname: `/category/${type}/write_review`,
+                item: {
+                  title: props.title,
+                },
+              }}
+              state={{
+                writeReviewData,
+              }}
+              className="btn btn-primary"
+            >
+              Write a Review
+            </Link>
+            <button
+              className="btn btn-secondary read-review-button"
+              onClick={openModal}
+            >
+              Read Reviews
+            </button>
           </div>
-          {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-          <Link
-            to={{
-              pathname: `/category/${type}/write_review`,
-              item: {
-                title: props.title,
-              },
-            }}
-            state={{
-              writeReviewData,
-            }}
-            className="btn btn-primary"
-          >
-            Write a Review
-          </Link>
-          <button
-            className="btn btn-secondary read-review-button"
-            onClick={openModal}
-          >
-            Read Reviews
-          </button>
         </div>
       </div>
       <div>
@@ -229,11 +248,11 @@ const Item = props => {
                 Home
               </Link>
               <FontAwesomeIcon icon={faAngleRight} />
-              <span className="breadcrumb-link" >
+              <span className="breadcrumb-link">
                 {type.charAt(0).toUpperCase() + type.slice(1)}
               </span>
               <FontAwesomeIcon icon={faAngleRight} />
-              <span className="breadcrumb-link">
+              <span className="breadcrumb-link breadcrumb-link-active">
                 {props.title.charAt(0).toUpperCase() + props.title.slice(1)}
               </span>
             </div>

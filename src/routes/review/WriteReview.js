@@ -68,9 +68,8 @@ const WriteReview = props => {
     });
   };
 
-
   return (
-    <div className="category-component">
+    <div className="home">
       <div className="breadcrumb">
         <Link className="breadcrumb-link" to="/">
           Home
@@ -80,7 +79,7 @@ const WriteReview = props => {
           {type.charAt(0).toUpperCase() + type.slice(1)}
         </Link>
         <FontAwesomeIcon icon={faAngleRight} />
-        <span className="breadcrumb-link">
+        <span className="breadcrumb-link breadcrumb-link-active">
           {location.state.writeReviewData.title}
         </span>
       </div>
@@ -107,13 +106,8 @@ const WriteReview = props => {
         </div>
 
         <div className="form-group write-review-btns">
-        <button className="btn-submit-review btn btn-primary">
-            Submit Review
-          </button>
-          <span
-            onClick={confirmCancel}
-            className="btn-submit-review btn btn-warning"
-          >
+          <button className=" btn btn-primary">Submit Review</button>
+          <span onClick={confirmCancel} className="btn btn-danger">
             Cancel
           </span>
         </div>

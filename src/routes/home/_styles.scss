@@ -1,72 +1,69 @@
 .category-container {
-    display: flex !important;
+  display: flex !important;
+  justify-content: space-between;
+  text-decoration: none;
+
+  .category {
+    display: flex;
     justify-content: space-between;
+    font-weight: 700;
+    margin-right: 5px;
     text-decoration: none;
+    color: #fcfcfc;
 
-
-    .category {
-        display: flex;
-        justify-content: space-between;
-        font-weight: 700;
-        margin-right: 5px;
-        text-decoration: none;
-        color: #fcfcfc;
-        font-size: 20px;
-
-        &:hover {
-            background-color: #379b75;
-            cursor: pointer;
-        }
-
-        padding: 10px 60px;
-        border: 1px solid #474747;
-        border-radius: 30px;
-        text-align: left;
-
-        a {
-            text-decoration: none;
-            color: #fcfcfc;
-        }
-
-        .category-icon {
-            color: #fcfcfc;
-            margin-right: 15px;
-            width: 15px;
-        }
+    &:hover {
+      background-color: #379b75;
+      cursor: pointer;
     }
+
+    padding: 10px 50px;
+    border: 1px solid #474747;
+    border-radius: 30px;
+    text-align: left;
+
+    .category-icon {
+      color: #fcfcfc;
+      margin-right: 15px;
+      width: 15px;
+    }
+  }
 }
 
 .search-container {
-    margin-top: 30px;
+  margin-top: 30px;
+  position: relative;
+
+  .search-bar-container {
     position: relative;
+  }
 
-    .search-bar-container {
-        position: relative;
-    }
+  .main-image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
 
-    .main-image {
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
-    }
+  .form-control {
+    padding: 20px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 25%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    font-size: 1.2rem;
+    display: block;
+    width: 75%;
+    margin-left: 10%;
+  }
 
-    .form-control {
-        padding: 20px;
-        border-radius: 50px;
-        position: absolute;
-        margin-top: 25%;
-        width: 100%;
-        text-align: center;
-        box-shadow: 0 4px 4px rgb(0 0 0 / 25%);  
-        font-size: 1.2rem;  
-        display: block;    
-        width: 75%;
-        margin-left: 10%;
-    }
-
-    .search-component {
-        padding: 50px;
-        text-align: center;
-    }
+  .search-component {
+    padding: 50px;
+    text-align: center;
+  }
 }
 
+.category-container .active {
+  background-color: #379b75;
+  color: #fcfcfc;
+}

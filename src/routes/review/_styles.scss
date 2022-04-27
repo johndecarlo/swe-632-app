@@ -1,177 +1,182 @@
 .reviewbox {
-    padding: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-    background-color: #000000;
-    border: 1px solid #474747;
-  }
-  
-  .reviewbox-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .reviewbox-username,
-  .reviewbox-rating,
-  .reviewbox-comment-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-  }
-  
-  .reviewbox-user {
-    font-size: 1.6rem;
-    font-weight: 400;
-  }
-  
-  .reviewbox-rating-star {
-    font-size: 1.6rem;
-    font-weight: 400;
-  }
-  
-  .reviewbox-comments {
-    margin-top: 1rem;
-  }
-  
-  .reviewbox-comment {
-    width: 70%;
-    padding: 0.5rem;
-    border: 1.5px solid #ddd;
-  }
-  
-  .reviewbox-likeDislike {
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-    position: relative;
-  }
-  
-  .reviewbox-like,
-  .reviewbox-dislike {
-    font-size: 1.4rem;
-    width: 2.8rem;
-    height: 2.8rem;
-    background-color: #fff;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    line-height: 2.8rem;
-    text-align: center;
-    cursor: pointer;
-    color: #121212;
-    transition: 300ms ease;
-    position: relative;
-  }
-  
-  .reviewbox-like:hover,
-  .reviewbox-dislike:hover {
-    background-color: #121212;
-    color: #fff;
-  }
-  
-  .like-count {
-    position: absolute;
-    right: -0.5rem;
-    top: -0.65rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1.3rem;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 1px solid #003cff;
-    color: #003cff;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  
-  .dislike-count {
-    position: absolute;
-    right: -0.5rem;
-    bottom: -0.65rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 1px solid #f70909;
-    color: #f70909;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  
-  .userReview__Button {
-    display: block;
-    width: 20rem;
-    padding: 0.8rem 1.2rem;
-    font-family: inherit;
-    font-size: 1.8rem;
-    color: #fff;
-    margin: 0 auto;
-    margin-top: 1.5rem;
-    border: 0;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    background-color: #e64d15;
-  }
-  
-  .no-reviews {
-    font-size: 3, 2rem;
-    text-align: center;
-  }
-  
-  .textbox-area {
-    background-color: transparent;
-    color: #fcfcfc;
-  }
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #000000;
+  border: 1px solid #474747;
+}
 
-  .reviewbox-like.active {
-    background-color: #3967c9;
-    color: #fff;
-  }
+.reviewbox-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .reviewbox-dislike.active {
-    background-color: red;
-    color: #fff;
-  }
+.reviewbox-username,
+.reviewbox-rating,
+.reviewbox-comment-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
 
-  .ReactModal__Content {
-    background-color: #000000 !important;
-  }
+.reviewbox-user {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
 
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  .error-message {
-    color: #ff0000;
-    font-size: 1rem;
-    margin-top: 0;
-  }
+.reviewbox-rating-star {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
 
-  .write-review-btns {
-    display: flex;
-    align-items: center;
-    column-gap: 1.5rem;
-  }
-  
-  .breadcrumb {
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
-  }
-  
-  .breadcrumb-link {
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .breadcrumb-link:hover {
-    color: #379b75;
-  }
+.reviewbox-comments {
+  margin-top: 1rem;
+}
 
-  .category-header svg:hover {
-    color: #379b75;
-  }
+.reviewbox-comment {
+  width: 70%;
+  padding: 0.5rem;
+  border: 1.5px solid #ddd;
+}
+
+.reviewbox-likeDislike {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.reviewbox-like,
+.reviewbox-dislike {
+  font-size: 1.4rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  line-height: 2.8rem;
+  text-align: center;
+  cursor: pointer;
+  color: #121212;
+  transition: 300ms ease;
+  position: relative;
+}
+
+.reviewbox-like:hover,
+.reviewbox-dislike:hover {
+  background-color: #121212;
+  color: #fff;
+}
+
+.like-count {
+  position: absolute;
+  right: -0.5rem;
+  top: -0.65rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.3rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #003cff;
+  color: #003cff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.dislike-count {
+  position: absolute;
+  right: -0.5rem;
+  bottom: -0.65rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #f70909;
+  color: #f70909;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.userReview__Button {
+  display: block;
+  width: 20rem;
+  padding: 0.8rem 1.2rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #e64d15;
+}
+
+.no-reviews {
+  font-size: 3, 2rem;
+  text-align: center;
+}
+
+.textbox-area {
+  background-color: transparent;
+  color: #fcfcfc;
+}
+
+.reviewbox-like.active {
+  background-color: #3967c9;
+  color: #fff;
+}
+
+.reviewbox-dislike.active {
+  background-color: red;
+  color: #fff;
+}
+
+.ReactModal__Content {
+  background-color: #000000 !important;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.write-review-btns {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.breadcrumb-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  color: #379b75;
+}
+
+.breadcrumb-link-active {
+  font-weight: 700;
+  color: #379b75;
+}
+
+.category-header svg:hover {
+  color: #379b75;
+}

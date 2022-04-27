@@ -3,48 +3,64 @@
     {
       "title": "Lord of the Flies",
       "countLikes": 28,
-      "countDislikes": 20
+      "countDislikes": 20,
+      "description": "The story of a group of British",
+      "img": "../../images/LordOfFlie_Book.jpg"
     },
     {
       "title": "Lord of the Rings: Fellowship of the Ring",
       "countLikes": 15,
-      "countDislikes": 8
+      "countDislikes": 8,
+      "description": "The story of a group of British",
+      "img": "../../images/LordOfRings_Book.jpg"
     }
   ],
   "movies": [
     {
       "title": "Fight Club",
       "countLikes": 70,
-      "countDislikes": 24
+      "countDislikes": 24,
+      "description": "The story of a group of British",
+      "img": "../../images/Fight Club_Movie.jpg"
     },
     {
       "title": "Donnie Darko",
       "countLikes": 17,
-      "countDislikes": 9
+      "countDislikes": 9,
+      "description": "The story of a group of British",
+      "img": "../../images/Donnie_Movie.jpg"
     },
     {
       "title": "Avengers: Endgame",
       "countLikes": 20,
-      "countDislikes": 4
+      "countDislikes": 4,
+      "description": "The story of a group of British",
+      "img": "../../images/Avengers_Movie.jpg"
     },
     {
       "title": "The Shawshank Redemption",
       "countLikes": 33,
-      "countDislikes": 45
+      "countDislikes": 45,
+      "description": "The story of a group of British",
+      "img": "../../images/Shawshank_Movie.jpg"
     }
   ],
   "restaurants": [
     {
       "title": "Mike's American Grill",
       "countLikes": 27,
-      "countDislikes": 12
+      "countDislikes": 12,
+      "description": "The story of a group of British",
+      "img": "../../images/Mikes_Restaurant.jpg"
     }
   ],
   "television": [
     {
       "title": "Breaking Bad",
       "countLikes": 19,
-      "countDislikes": 10
+      "countDislikes": 10,
+      "description": "The story of a group of British",
+      "img": "../../images/Breaking Bad_TVShow.jpg"
     }
   ]
 }

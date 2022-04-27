@@ -67,7 +67,7 @@ const Category = () => {
           <div>Television </div>
         </NavLink>
       </div>
-      <br />
+
       <div className="category-header">
         <Link className="return-button" to="/">
           <FontAwesomeIcon icon={faArrowCircleLeft} />
@@ -120,6 +120,8 @@ const Category = () => {
                   title={title}
                   countLikes={item.countLikes}
                   countDislikes={item.countDislikes}
+                  description={item.description}
+                  img={item.img}
                 />
               );
             })}
