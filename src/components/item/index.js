@@ -116,15 +116,13 @@ const Item = props => {
       <div className="reviewbox" key={ind}>
         <div className="reviewbox-flex">
           <div className="reviewbox-username">
-            User Name: <span className="reviewbox-user">{review.userName}</span>
+            <span className="reviewbox-user">{review.userName}</span>
           </div>
           <div className="reviewbox-rating">
-            Rating:{' '}
             <span className="reviewbox-rating-star">{review.rating} Stars</span>
           </div>
         </div>
         <div className="reviewbox-comments">
-          <div className="reviewbox-comment-title">Comments:</div>
           <p className="reviewbox-comment">{review.review}</p>
         </div>
         <div className="reviewbox-likeDislike">

@@ -69,7 +69,7 @@ const WriteReview = props => {
   };
 
   return (
-    <div className="home">
+    <div className="category-component">
       <div className="breadcrumb">
         <Link className="breadcrumb-link" to="/">
           Home
