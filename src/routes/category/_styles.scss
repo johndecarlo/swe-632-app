@@ -79,7 +79,10 @@ input {
 }
 
 .card-description-title {
-  font-weight: 600;
+  font-weight: 900;
+  font-size: 17px;
+  font-style: italic;
+
 }
 
 .card-sub-body {
@@ -88,6 +91,7 @@ input {
 
 .card-description {
   margin: 0;
+  font-size: 15px;
 }
 
 .card-images {

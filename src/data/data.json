@@ -4,14 +4,14 @@
       "title": "Lord of the Flies",
       "countLikes": 28,
       "countDislikes": 20,
-      "description": "The story of a group of British",
+      "description": "Lord of the Flies is a 1954 debut novel by Nobel Prize-winning British author William Golding.",
       "img": "../../images/LordOfFlie_Book.jpg"
     },
     {
       "title": "Lord of the Rings: Fellowship of the Ring",
       "countLikes": 15,
       "countDislikes": 8,
-      "description": "The story of a group of British",
+      "description": "It is the first of three volumes of the epic novel The Lord of the Rings by the English author J. R. R. Tolkien.",
       "img": "../../images/LordOfRings_Book.jpg"
     }
   ],
@@ -20,28 +20,28 @@
       "title": "Fight Club",
       "countLikes": 70,
       "countDislikes": 24,
-      "description": "The story of a group of British",
+      "description": "is a 1999 American film directed by David Fincher and starring Brad Pitt, Edward Norton, and Helena Bonham Carter.",
       "img": "../../images/Fight Club_Movie.jpg"
     },
     {
       "title": "Donnie Darko",
       "countLikes": 17,
       "countDislikes": 9,
-      "description": "The story of a group of British",
+      "description": "Donnie Darko is a 2001 American science fiction psychological thriller film written and directed by Richard Kelly.",
       "img": "../../images/Donnie_Movie.jpg"
     },
     {
       "title": "Avengers: Endgame",
       "countLikes": 20,
       "countDislikes": 4,
-      "description": "The story of a group of British",
+      "description": " It is an American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios ",
       "img": "../../images/Avengers_Movie.jpg"
     },
     {
       "title": "The Shawshank Redemption",
       "countLikes": 33,
       "countDislikes": 45,
-      "description": "The story of a group of British",
+      "description": "It is a 1994 American drama film written and directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank Redemption.",
       "img": "../../images/Shawshank_Movie.jpg"
     }
   ],
@@ -50,7 +50,7 @@
       "title": "Mike's American Grill",
       "countLikes": 27,
       "countDislikes": 12,
-      "description": "The story of a group of British",
+      "description": "Suburban saloon offering American fare & regional seafood in a big, bi-level space hung with stars",
       "img": "../../images/Mikes_Restaurant.jpg"
     }
   ],
@@ -59,7 +59,7 @@
       "title": "Breaking Bad",
       "countLikes": 19,
       "countDislikes": 10,
-      "description": "The story of a group of British",
+      "description": "Breaking Bad is an American neo-Western crime drama television series created and produced by Vince Gilligan.",
       "img": "../../images/Breaking Bad_TVShow.jpg"
     }
   ]
